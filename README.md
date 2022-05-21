@@ -112,20 +112,10 @@ First we need to get root rights with one simple command:
 ### We are launching:
     docker-compose up -d
     
-###  Check  	:
+###  Check and enjoy	:
 
     docker-compose logs router
-    
-### Need to create a swap file: 
-    
-    sudo fallocate -l 8G /swapfile
-    sudo chmod 600 /swapfile
-    sudo mkswap /swapfile
-    sudo swapon /swapfile
-    
-    
-    
-    
+       
     
 # :sunglasses:
 
