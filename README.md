@@ -8,7 +8,28 @@
 First we need to get root rights with one simple command:
   
     sudo su
-  
+    
+ ### Need to create a swap file: 
+    
+    sudo fallocate -l 8G /swapfile
+    sudo chmod 600 /swapfile
+    sudo mkswap /swapfile
+    sudo swapon /swapfile
+    
+# Make swap file permanent:
+
+> As a result of the changes we made, the swap file is activated for the current session. After a reboot, the server will not save the swap settings automatically. We   can change this by adding a swap file to /etc/fstab.
+
+    sudo nano /etc/fstab
+    
+### Add the swap file information to the end of the /etc/fstab file by typing the following:
+    
+    /swapfile swap swap defaults 0 0
+
+### Let's check the success of our operation:
+    
+    htop
+
 ### Time to update:
    
     apt update && apt upgrade -y
@@ -91,7 +112,21 @@ First we need to get root rights with one simple command:
 ### We are launching:
     docker-compose up -d
     
-###  Check and enjoy 	:
+###  Check  	:
 
     docker-compose logs router
-# :sunglasses:    
+    
+### Need to create a swap file: 
+    
+    sudo fallocate -l 8G /swapfile
+    sudo chmod 600 /swapfile
+    sudo mkswap /swapfile
+    sudo swapon /swapfile
+    
+    
+    
+    
+    
+# :sunglasses:
+
+
