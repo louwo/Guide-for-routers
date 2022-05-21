@@ -1,4 +1,9 @@
-# Connext Router Setup
+# Router Setup
+
+  ![image](https://user-images.githubusercontent.com/105949403/169671637-a7c82bc5-3595-49d6-92d1-4468aa3ec420.png)
+
+
+
    - As a starting point, we will take the fact that you have already rented a cloud server on Ubuntu and logged into it using the command line / terminal with minimal requirements in the form of :
       - 8GB RAM
       - 30GB Storage
